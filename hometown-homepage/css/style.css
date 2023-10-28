@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Literata:opsz@7..72&family=Orbitron:wght@500&display=swap");
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  background-image: linear-gradient(
+    to right bottom,
+    #70b4f0,
+    #7cb3e6,
+    #86b2dd,
+    #8eb0d3,
+    #96afca,
+    #9ba8c6,
+    #a0a1bf,
+    #a59ab7,
+    #b389a4,
+    #ba7b84,
+    #b3735e,
+    #99733c
+  );
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+section.active {
+  visibility: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Literata", serif;
+  overflow: hidden;
+}
+
+/* First Section (section 0) */
+
+#taytay-img {
+  background-image: url("../images/church-img.jpeg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+#head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: inherit;
+  margin: auto;
+}
+
+#head-title,
+#head-description {
+  font-size: 3rem;
+  color: #3b4856;
+  text-shadow: 0px 0px 4px #9fadbd;
+  background-color: #70b4f0;
+  padding: 1em;
+  margin: 1rem;
+  border-radius: 20px;
+  border: 5px solid #99733c;
+}
+
+#head-description {
+  font-size: 1.5rem;
+}
+
+/* Second Section (section 1) */
+
+#main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#content-title,
+#container1,
+#container2,
+#container3 {
+  color: #3b4856;
+  text-shadow: 0px 0px 4px #9fadbd;
+  background-color: #70b4f0;
+  padding: 1em;
+  margin: 1rem;
+  border-radius: 20px;
+  border: 5px solid #99733c;
+}
+
+#content-title {
+  width: 50vw;
+  font-size: 4rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+#container1-title,
+#container2-title,
+#container3-title,
+#container1-content,
+#container2-content,
+#container3-content {
+  margin: 1rem;
+}
+
+#container1-title,
+#container2-title,
+#container3-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#container1-content,
+#container2-content,
+#container3-content {
+  font-size: 1.5rem;
+}
+
+#container1,
+#container2,
+#container3 {
+  width: 30vw;
+  height: 55vh;
+  margin: auto 0;
+}
+
+#container1-img {
+  background-image: url(../images/tiangge.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border: 5px solid #99733c;
+  cursor: pointer;
+}
+
+#container2-img {
+  background-image: url(../images/history-img.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border: 5px solid #99733c;
+  cursor: pointer;
+}
+
+#container3-img {
+  background-image: url(../images/garments.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border: 5px solid #99733c;
+  cursor: pointer;
+}
+
+/* Third Section (section 2) */
+
+#closing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  margin: auto;
+}
+
+#closing-title,
+#closing-content {
+  color: #3b4856;
+  text-shadow: 0px 0px 4px #9fadbd;
+  background-color: #70b4f0;
+  padding: 1.5em;
+  margin: 1rem;
+  border-radius: 20px;
+  border: 5px solid #99733c;
+  width: 40vw;
+}
+
+#closing-img {
+  background-image: url(../images/tom.png);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+
+button {
+  border: none;
+  background-image: linear-gradient(
+    to left top,
+    #70b4f0,
+    #ad96d6,
+    #cb7ba0,
+    #c27065,
+    #99733c
+  );
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+}
+
+#closing-button {
+  color: #f5f1ed;
+  text-decoration: none;
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #3b4856;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px #9fadbd;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #d2a76d;
+  }
+}
